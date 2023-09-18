@@ -1,0 +1,64 @@
+// AddPage.module.scss
+@mixin base_button($bg_color, $color, $width, $height, $border) {
+  margin: 5px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: $bg_color;
+  color: $color;
+  width: $width;
+  height: $height;
+  border: $border;
+}
+
+@mixin base_input($bg_color, $color, $width, $height, $border, $padding) {
+  margin: 5px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: $bg_color;
+  color: $color;
+  width: $width;
+  height: $height;
+  border: $border;
+  padding-left: $padding;
+}
+
+.pidor {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  input {
+    @include base_input(white, black, 250px, 40px, 2px solid black, 5px);
+  }
+  button {
+    @include base_button(black, white, 250px, 40px, 2px solid black);
+  }
+}
+.errorInput {
+  border: 3px solid rgb(255, 77, 0) !important;
+  outline: none;
+  color: rgb(255, 77, 0);
+}
+.error {
+  color: red;
+}

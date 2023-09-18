@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "title": "pidota",
+      "price": 999,
+      "img": "a",
+      "id": 1
+    },
+    {
+      "title": "string",
+      "price": 12,
+      "img": "string",
+      "id": 2
+    },
+    {
+      "title": "awertgh",
+      "price": 123,
+      "img": "asdf",
+      "id": 3
+    },
+    {
+      "title": "asdasd",
+      "price": 122,
+      "img": "asdf",
+      "id": 4
+    }
+  ]
+}
